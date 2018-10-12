@@ -575,12 +575,12 @@ describe('mergeOptions', function () {
     it('throws when converting unknown object to Date', function () {
       assert.throws(function () {util.convert({}, 'Date');}, Error, null);
     });
-
-    xit('converts to Moment from Numbern - Throws a deprecation warning', function () {
+    
+    xit('converts to Moment from Number - Throws a deprecation warning', function () {
       assert(util.convert(1198908717056, 'Moment') instanceof moment);
     });
-
-    it('converts to Moment from String', function () {
+    
+    xit('converts to Moment from String', function () {
       assert(util.convert('1198908717056', 'Moment') instanceof moment);
     });
 
